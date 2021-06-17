@@ -28,7 +28,8 @@ namespace _BankAcc
         public Person(string fname,string lname, DateTime dateofbirth)
         {
             this.firstName = fname;
-            this.lastName = lastName;
+            this.lastName = lname;
+            this._dateOfBirth = dateofbirth;
         }
         public int GetAge()
         {

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
+
 namespace _BankAcc
 {
     public class Account : Person
@@ -37,5 +38,13 @@ namespace _BankAcc
             }
             _sumOfMoney = sumMoney;
         }
+
+        public Account(): base() { }
+        public Account(string firstname, string lastname, DateTime dateofbirth, DateTime creatDate, int sum, string curr) : base(firstname,lastname,dateofbirth)
+        {
+            this._creatDate = creatDate;
+            this._sumOfMoney = sum;
+            this.currency = curr;
+        }   
     }
 }
